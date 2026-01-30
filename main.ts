@@ -1,0 +1,7 @@
+let mySprite = sprites.create(assets.image`Billy`, SpriteKind.Player)
+tiles.setCurrentTilemap(tilemap`level1`)
+scene.setBackgroundColor(13)
+effects.confetti.startScreenEffect()
+scene.cameraFollowSprite(mySprite)
+controller.moveSprite(mySprite)
+music.play(music.stringPlayable("- - - - - - - - ", 120), music.PlaybackMode.UntilDone)
